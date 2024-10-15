@@ -1,12 +1,11 @@
 #!/bin/bash
 
 function whichOption() {
-	if [ $1 == "yes" ]; then
-		echo "shut up"
-	else
-		echo "I want a biscuit"
+	if [ $1 == "fish" ]; then
+		curl asciiquarium.live
+	elif [ $1 == "bird" ]; then
+		curl parrot.live
 	fi
 }
 
-whichOption "yes"
-whichOption "no"
+whichOption $1
